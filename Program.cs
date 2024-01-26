@@ -10,6 +10,14 @@ do
         Console.WriteLine("Error! Enter a number!");
 } while (!f);
 
+int[] generatedArray = new MyArray(N).arr;
+Console.WriteLine("\nGenerated array elements:");
+foreach (int num in generatedArray)
+{
+    Console.Write($"{num} ");
+}
+Console.WriteLine();
+
 MyArray myArray = new MyArray(N);
 
 Console.WriteLine($"\nThe sum of the negative elements of the array: {myArray.SumNegative()}");
